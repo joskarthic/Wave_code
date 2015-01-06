@@ -27,7 +27,7 @@
     <preference name="fullscreen"       value="false" />
     <preference name="webviewbounce"    value="false" />
 
-    <icon src="icon.png" />
+   <icon src="icon.png" />
    
 
     
