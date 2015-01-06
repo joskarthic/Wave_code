@@ -27,19 +27,29 @@
         <title>Barcode Scanner </title>
     </head>
     <body>
-        <div class="container">
+        <div class="container" style="padding-top:40px">
             <h1>Wave</h1>
-           <div class='row'>
+           <div class='row form-group'>
            <section class="col col-xs-12">
            	<a href="#" class="btn btn-success btn-lg col col-xs-12" id="scan">SCAN</a>
            </section>
-           <section class="col col-xs-12">
+           </div>
+           <div class='row form-group'>
+           <section class="col col-xs-8">
+           
            	<label class="input">
-           	<i class="icon-append"><button class="btn btn-success btn-xs" onclick="myFunction()" type="submit">GO</button></i>
-           	<input type="text" id="uni_code" name="qrcode">
+           	
+           	<input type="text" id="uni_code" class="form-control" name="qrcode" />
            		
            	</label>
            </section>
+           <section class="col col-xs-4">
+           
+           <button class="btn btn-success btn-lg" onclick="myFunction()" type="submit">GO</button>
+           	
+           </section>
+           </div>
+           <div class='row form-group'>
            <section class="col col-xs-12">
            	<a class="btn btn-primary btn-lg   col col-xs-12" href="http://appnlogic.com/wave/app/add_customers.php"><i class="fa fa-circle-arrow-up fa-lg"></i> Add Customer Details</a>
            </section>
