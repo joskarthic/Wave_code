@@ -62,16 +62,16 @@ var app = {
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
            "Cancelled: " + result.cancelled);  
-        
+        var QRcode=result.text;
+            alert(QRcode);
+            alert('test');
+            window.open('http://appnlogic.com/wave/app/overview.php?qrcode='+QRcode, '_blank', 'location=yes');
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
             document.getElementById("info").innerHTML = result.text;
-            var QRcode=result.text;
-            alert(QRcode);
-            alert('test');
-            window.open('http://appnlogic.com/wave/app/overview.php?qrcode='+QRcode, '_blank', 'location=yes');
+            
             console.log(result);
             /*
             if (args.format == "QR_CODE") {
