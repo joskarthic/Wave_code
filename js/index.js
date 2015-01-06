@@ -68,7 +68,10 @@ var app = {
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
             document.getElementById("info").innerHTML = result.text;
-            window.open('http://appnlogic.com/wave/app/overview.php?qrcode='+result.text, '_blank', 'location=yes');
+            var QRcode=result.text;
+            alert(QRcode);
+            alert('test');
+            window.open('http://appnlogic.com/wave/app/overview.php?qrcode='+QRcode, '_blank', 'location=yes');
             console.log(result);
             /*
             if (args.format == "QR_CODE") {
