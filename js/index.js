@@ -58,13 +58,13 @@ var app = {
 
         scanner.scan( function (result) { 
 
-           alert("We got a barcode\n" + 
-            "Result: " + result.text + "\n" + 
-            "Format: " + result.format + "\n" + 
-           "Cancelled: " + result.cancelled);  
+          // alert("We got a barcode\n" + 
+           // "Result: " + result.text + "\n" + 
+          //  "Format: " + result.format + "\n" + 
+         //  "Cancelled: " + result.cancelled);  
         var QRcode=result.text;
-            alert(QRcode);
-            alert('test');
+            //alert(QRcode);
+           // alert('test');
             window.open('http://appnlogic.com/wave/app/overview.php?qrcode='+QRcode, '_blank', 'location=yes');
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
