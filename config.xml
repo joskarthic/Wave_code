@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.ryanw.barcodedemo"
         version   = "2.0.0">
-    <name>Wave Scanner</name>
+    <name>SEDAR WAVE</name>
 
     <description>
         Scans barcodes.
@@ -27,7 +27,7 @@
     <preference name="fullscreen"       value="false" />
     <preference name="webviewbounce"    value="false" />
 
-    
+    <icon src="icon.png" />
    
 
     
