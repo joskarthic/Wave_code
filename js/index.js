@@ -62,12 +62,13 @@ var app = {
            // "Result: " + result.text + "\n" + 
            // "Format: " + result.format + "\n" + 
            // "Cancelled: " + result.cancelled);  
-        window.open('http://appnlogic.com/wave/app/overview.php?qrcode=ST118-1', '_blank', 'location=yes');
+        
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
             document.getElementById("info").innerHTML = result.text;
+            window.open('http://appnlogic.com/wave/app/overview.php?qrcode='+result.text, '_blank', 'location=yes');
             console.log(result);
             /*
             if (args.format == "QR_CODE") {
